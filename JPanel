@@ -1,0 +1,54 @@
+
+package mainFrame;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+public class JPanel extends javax.swing.JPanel {
+
+    
+    public JPanel() {
+        initComponents();
+       
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+    }// </editor-fold>                        
+
+
+    @Override
+    public void paintComponent(java.awt.Graphics g); {
+    
+    Cirkel liten = new Cirkel();
+    liten.x = 110;
+    liten.y = 50;
+    liten.d = 20;
+    
+    Cirkel stor = new Cirkel();
+    
+    stor.x = 95;
+    stor.y = 35;
+    stor.d = 50;
+    
+    g.drawOval( liten.x, liten.y, liten.d, liten.d );
+    g.drawOval( stor.x, stor.y, stor.d, stor.d );
+    
+}
+
+    // Variables declaration - do not modify                     
+    // End of variables declaration                   
+}
