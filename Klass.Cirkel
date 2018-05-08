@@ -1,0 +1,24 @@
+
+package mainFrame;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Cirkel {
+    
+    private int x = 0;
+    private int y = 0;
+    private int diameter = 1;
+    
+    public Cirkel(int x, int y, int diameter) {
+        this.x = x;
+        this.y = y;
+        this.diameter = diameter;
+    }
+    
+    public void rita (Graphics g) {
+        g.setColor(Color.RED);
+        g.fillOval(x, y, diameter, diameter);
+    }   
+    
+}
